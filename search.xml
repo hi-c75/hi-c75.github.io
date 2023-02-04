@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>article title</title>
+    <url>/2023/02/04/article-title/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/07/28/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
@@ -19,8 +24,66 @@
 ]]></content>
   </entry>
   <entry>
-    <title>article title</title>
-    <url>/2023/02/04/article-title/</url>
-    <content><![CDATA[]]></content>
+    <title></title>
+    <url>/2023/02/05/Git%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-基本配置"><a href="#1-基本配置" class="headerlink" title="1. 基本配置"></a>1. 基本配置</h2><ol>
+<li><p>设置用户信息</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;itcast&quot;</span></span><br><span class="line">git config --global user.name <span class="string">&quot;hello@itcast.cn&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+</li>
+<li><p>查看配置信息</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name </span><br><span class="line">git config --global user.email</span><br></pre></td></tr></table></figure></div>
+
+</li>
+</ol>
+<h2 id="2-为指令配置别名"><a href="#2-为指令配置别名" class="headerlink" title="2. 为指令配置别名"></a>2. 为指令配置别名</h2><ol>
+<li><p>打开用户目录，创建<code>.bashrc</code>文件</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> .bashrc</span><br></pre></td></tr></table></figure></div>
+
+<p> 部分Windows用户系统不允许创建点好开头文件，则可使用一下命令</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">touch</span> ~/.bashrc</span><br></pre></td></tr></table></figure></div></li>
+<li><p>在<code>.bashrc</code>文件中输入一下内容：</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#用于输出git日志</span></span><br><span class="line"><span class="built_in">alias</span> git-log=<span class="string">&#x27;git log --pretty=oneline --all --graph --abbrev-commit&#x27;</span></span><br><span class="line"><span class="comment">#用于输出当前目录所有文件及基本信息</span></span><br><span class="line"><span class="built_in">alias</span> ll=<span class="string">&#x27;ls -al&#x27;</span></span><br></pre></td></tr></table></figure></div></li>
+<li><p>执行一下指令</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">source</span> ../.bashrc</span><br></pre></td></tr></table></figure></div>
+
+<p> 注：<code>../</code>表示上一级目录</p>
+</li>
+</ol>
+<h2 id="3-配置公钥"><a href="#3-配置公钥" class="headerlink" title="3. 配置公钥"></a>3. 配置公钥</h2><ol>
+<li><p>生成SSH公钥</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure></div>
+
+<p> 执行该命令后不断回车，注意，如果公钥已存在则自动覆盖</p>
+</li>
+<li><p>Gitee设置账户共公钥</p>
+<p> 获取公钥</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></div>
+<p> <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="./img/1.png"
+                      alt="Gitee设置"
+                ></p>
+</li>
+<li><p>验证是否配置成功</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#配置gitee</span></span><br><span class="line">ssh -T git@gitee.com</span><br><span class="line"><span class="comment">#配置github</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+<h2 id="4-远程仓库"><a href="#4-远程仓库" class="headerlink" title="4. 远程仓库"></a>4. 远程仓库</h2><ol>
+<li><p>添加远程仓库</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin SSH/HTTP</span><br></pre></td></tr></table></figure></div>
+
+<p> <img src="./img/2.png" alt="Gitee_SSH/HTTP"></p>
+</li>
+<li><p>推送到远程仓库</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#[-f]强制覆盖  [--set-upstream]推送到远端的同时并且建立起和远端分支的关联关系</span></span><br><span class="line">git push -f --set-upstream origin master:master</span><br><span class="line"><span class="comment">#该命令可查看本地分支与远程分支的对应关系</span></span><br><span class="line">git branch -vv</span><br></pre></td></tr></table></figure></div></li>
+<li><p>克隆远程仓库</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> SSH/HTTP [本地文件夹]</span><br></pre></td></tr></table></figure></div></li>
+<li><p>从远程仓库拉取</p>
+ <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#pull(拉取) = fetch(抓取) + merge(合并)</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></div>
+
+</li>
+</ol>
+]]></content>
   </entry>
 </search>
