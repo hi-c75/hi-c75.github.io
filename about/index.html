@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/02/05/git配置/"/>
+    <link rel="canonical" href="http://example.com/about/"/>
     <!--- Icon Part-->
     <link rel="icon" type="image/png" href="/images/C.svg" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/C.svg">
@@ -17,6 +17,8 @@
     <link rel="shortcut icon" href="/images/C.svg">
     
     <title>
+        
+            关于 |
         
         Hi-C75
     </title>
@@ -307,185 +309,17 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="post-page-container">
-        <div class="article-content-container">
-
-            
-            
-                <div class="article-title">
-                    <h1 class="article-title-regular"></h1>
-                </div>
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content markdown-body">
             
                 
             
-
-            
-                <div class="article-header">
-                    <div class="avatar">
-                        <img src="/images/avatar.jpg">
-                    </div>
-                    <div class="info">
-                        <div class="author">
-                            <span class="name">C75</span>
-                            
-                                <span class="author-label">75</span>
-                            
-                        </div>
-                        <div class="meta-info">
-                            <div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="pc">2023-02-05 01:10:33</span>
-        <span class="mobile">2023-02-05 01:10</span>
-    </span>
-    
-    
-
-    
-    
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-        </span>
-    
-</div>
-
-                        </div>
-                    </div>
-                </div>
-            
-
-            <div class="article-content markdown-body">
-                <h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-基本配置"><a href="#1-基本配置" class="headerlink" title="1. 基本配置"></a>1. 基本配置</h2><ol>
-<li><p>设置用户信息</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;itcast&quot;</span></span><br><span class="line">git config --global user.name <span class="string">&quot;hello@itcast.cn&quot;</span></span><br></pre></td></tr></table></figure></div>
-
-</li>
-<li><p>查看配置信息</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name </span><br><span class="line">git config --global user.email</span><br></pre></td></tr></table></figure></div>
-
-</li>
-</ol>
-<h2 id="2-为指令配置别名"><a href="#2-为指令配置别名" class="headerlink" title="2. 为指令配置别名"></a>2. 为指令配置别名</h2><ol>
-<li><p>打开用户目录，创建<code>.bashrc</code>文件</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> .bashrc</span><br></pre></td></tr></table></figure></div>
-
-<p> 部分Windows用户系统不允许创建点好开头文件，则可使用一下命令</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> ~/.bashrc</span><br></pre></td></tr></table></figure></div></li>
-<li><p>在<code>.bashrc</code>文件中输入一下内容：</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#用于输出git日志</span></span><br><span class="line"><span class="built_in">alias</span> git-log=<span class="string">&#x27;git log --pretty=oneline --all --graph --abbrev-commit&#x27;</span></span><br><span class="line"><span class="comment">#用于输出当前目录所有文件及基本信息</span></span><br><span class="line"><span class="built_in">alias</span> ll=<span class="string">&#x27;ls -al&#x27;</span></span><br></pre></td></tr></table></figure></div></li>
-<li><p>执行一下指令</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ../.bashrc</span><br></pre></td></tr></table></figure></div>
-
-<p> 注：<code>../</code>表示上一级目录</p>
-</li>
-</ol>
-<h2 id="3-配置公钥"><a href="#3-配置公钥" class="headerlink" title="3. 配置公钥"></a>3. 配置公钥</h2><ol>
-<li><p>生成SSH公钥</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br></pre></td></tr></table></figure></div>
-
-<p> 执行该命令后不断回车，注意，如果公钥已存在则自动覆盖</p>
-</li>
-<li><p>Gitee设置账户共公钥</p>
-<p> 获取公钥</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></div>
-<p> <img lazyload src="/images/loading.svg" data-src="1.png" alt="Gitee设置"></p>
-</li>
-<li><p>验证是否配置成功</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#配置gitee</span></span><br><span class="line">ssh -T git@gitee.com</span><br><span class="line"><span class="comment">#配置github</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div></li>
-</ol>
-<h2 id="4-远程仓库"><a href="#4-远程仓库" class="headerlink" title="4. 远程仓库"></a>4. 远程仓库</h2><ol>
-<li><p>添加远程仓库</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin SSH/HTTP</span><br></pre></td></tr></table></figure></div>
-
-<p> <img src="/.com//2.png" alt="Gitee_SSH/HTTP"></p>
-</li>
-<li><p>推送到远程仓库</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[-f]强制覆盖  [--set-upstream]推送到远端的同时并且建立起和远端分支的关联关系</span></span><br><span class="line">git push -f --set-upstream origin master:master</span><br><span class="line"><span class="comment">#该命令可查看本地分支与远程分支的对应关系</span></span><br><span class="line">git branch -vv</span><br></pre></td></tr></table></figure></div></li>
-<li><p>克隆远程仓库</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> SSH/HTTP [本地文件夹]</span><br></pre></td></tr></table></figure></div></li>
-<li><p>从远程仓库拉取</p>
- <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#pull(拉取) = fetch(抓取) + merge(合并)</span></span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></div>
-
-</li>
-</ol>
-
-            </div>
-
-            
-                <div class="post-copyright-info">
-                    <div class="article-copyright-info-container">
-    <ul>
-        <li>本文标题：</li>
-        <li>本文作者：C75</li>
-        <li>创建时间：2023-02-05 01:10:33</li>
-        <li>
-            本文链接：https://hi-c75.top/2023/02/05/Git配置/
-        </li>
-        <li>
-            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
-        </li>
-    </ul>
-</div>
-
-                </div>
-            
-
-            
-
-            
-                <div class="article-nav">
-                    
-                        <div class="article-prev">
-                            <a class="prev"
-                            rel="prev"
-                            href="/2023/02/08/test/"
-                            >
-                                <span class="left arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </span>
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">test</span>
-                                    <span class="post-nav-item">上一篇</span>
-                                </span>
-                            </a>
-                        </div>
-                    
-                    
-                        <div class="article-next">
-                            <a class="next"
-                            rel="next"
-                            href="/2022/07/28/hello-world/"
-                            >
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item">Hello World</span>
-                                    <span class="post-nav-item">下一篇</span>
-                                </span>
-                                <span class="right arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </span>
-                            </a>
-                        </div>
-                    
-                </div>
-            
-
+        </div>
+        <div class="page-template-comments">
             
         </div>
-
-        
-            <div class="toc-content-container">
-                <div class="post-toc-wrap">
-    <div class="post-toc">
-        <div class="toc-title">此页目录</div>
-        <div class="page-title"></div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="nav-text">Git配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE"><span class="nav-text">1. 基本配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E4%B8%BA%E6%8C%87%E4%BB%A4%E9%85%8D%E7%BD%AE%E5%88%AB%E5%90%8D"><span class="nav-text">2. 为指令配置别名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%85%8D%E7%BD%AE%E5%85%AC%E9%92%A5"><span class="nav-text">3. 配置公钥</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-text">4. 远程仓库</span></a></li></ol></li></ol>
-
-    </div>
-</div>
-            </div>
-        
     </div>
 </div>
 
@@ -562,23 +396,6 @@
         </div>
     </div>
 
-    
-        <div class="post-tools">
-            <div class="post-tools-container">
-    <ul class="tools-list">
-        <!-- TOC aside toggle -->
-        
-            <li class="right-bottom-tools page-aside-toggle">
-                <i class="fa-regular fa-outdent"></i>
-            </li>
-        
-
-        <!-- go comment -->
-        
-    </ul>
-</div>
-
-        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -708,16 +525,6 @@
 
 
 <div class="post-scripts pjax">
-    
-        
-<script src="/js/tools/toc-toggle.js"></script>
-
-<script src="/js/libs/anime.min.js"></script>
-
-<script src="/js/layouts/toc.js"></script>
-
-<script src="/js/plugins/tabs.js"></script>
-
     
     
 </div>
