@@ -1,32 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>article title</title>
-    <url>/2023/02/04/article-title/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/07/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>Welcome to <a class="link" href="https://hexo.io/">Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link" href="https://hexo.io/docs/">documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link" href="https://hexo.io/docs/troubleshooting.html">troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link" href="https://github.com/hexojs/hexo/issues">GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>More info: <a class="link" href="https://hexo.io/docs/writing.html">Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>More info: <a class="link" href="https://hexo.io/docs/server.html">Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>More info: <a class="link" href="https://hexo.io/docs/generating.html">Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
 
-<p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>More info: <a class="link" href="https://hexo.io/docs/one-command-deployment.html">Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>article title</title>
+    <url>/2023/02/04/article-title/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><!-- 《无名的人》毛不易-- -->
+
+
+    <div id="aplayer-XTPYOSqj" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1903149553" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#59F5E8"></div>
+
+<p>try something new</p>
 ]]></content>
   </entry>
   <entry>
     <title></title>
     <url>/2023/02/05/Git%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-基本配置"><a href="#1-基本配置" class="headerlink" title="1. 基本配置"></a>1. 基本配置</h2><ol>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><h2 id="1-基本配置"><a href="#1-基本配置" class="headerlink" title="1. 基本配置"></a>1. 基本配置</h2><ol>
 <li><p>设置用户信息</p>
  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;itcast&quot;</span></span><br><span class="line">git config --global user.name <span class="string">&quot;hello@itcast.cn&quot;</span></span><br></pre></td></tr></table></figure></div>
 
@@ -59,12 +65,7 @@
 <li><p>Gitee设置账户共公钥</p>
 <p> 获取公钥</p>
  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure></div>
-<p> <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="./img/1.png"
-                      alt="Gitee设置"
-                ></p>
+<p> <img lazyload src="/images/loading.svg" data-src="/img/1.png" alt="Gitee设置"></p>
 </li>
 <li><p>验证是否配置成功</p>
  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#配置gitee</span></span><br><span class="line">ssh -T git@gitee.com</span><br><span class="line"><span class="comment">#配置github</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></div></li>
@@ -73,7 +74,7 @@
 <li><p>添加远程仓库</p>
  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin SSH/HTTP</span><br></pre></td></tr></table></figure></div>
 
-<p> <img src="./img/2.png" alt="Gitee_SSH/HTTP"></p>
+<p> <img src="http://example.com/2023/02/05/Git%E9%85%8D%E7%BD%AE/2.png" alt="Gitee_SSH/HTTP"></p>
 </li>
 <li><p>推送到远程仓库</p>
  <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#[-f]强制覆盖  [--set-upstream]推送到远端的同时并且建立起和远端分支的关联关系</span></span><br><span class="line">git push -f --set-upstream origin master:master</span><br><span class="line"><span class="comment">#该命令可查看本地分支与远程分支的对应关系</span></span><br><span class="line">git branch -vv</span><br></pre></td></tr></table></figure></div></li>
@@ -87,8 +88,15 @@
 ]]></content>
   </entry>
   <entry>
+    <title>音乐添加问题</title>
+    <url>/2023/02/07/%E9%9F%B3%E4%B9%90%E6%B7%BB%E5%8A%A0%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img lazyload src="/images/loading.svg" data-src="/1.png" alt="1"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>second arcticle</title>
     <url>/2023/02/05/second-arcticle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img lazyload src="/images/loading.svg" data-src="/second-arcticle/wallhaven-wqery6-light.WEBP" alt="wallhaven-wqery6-light"></p>
+]]></content>
   </entry>
 </search>
