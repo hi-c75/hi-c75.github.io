@@ -80,6 +80,57 @@
     <title>test</title>
     <url>/2023/02/08/test/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img lazyload src="/images/loading.svg" data-src="2.png" alt="2"></p>
+<div class="note-large notel-default"><div class="notel-title"><p>信息</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+ </div></div>
+
+<div class="note-large notel-blue"><div class="notel-title"><p>提示</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+ </div></div>
+
+<div class="note-large notel-red"><div class="notel-title"><p>自定义标题</p>
+</div><div class="notel-content"><p>换行测试<br>换行测试<br>换行测试</p>
+ </div></div>
+
+<div class="note note-default icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>默认 提示块标签</p>
+</div>
+
+<div class="note note-default icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>default 提示块标签</p>
+</div>
+
+<div class="note note-primary icon-padding"><i class="note-icon fa-solid fa-circle-arrow-right"></i><p>primary 提示块标签</p>
+</div>
+
+<div class="note note-success icon-padding"><i class="note-icon fa-solid fa-check-circle"></i><p>success 提示块标签</p>
+</div>
+
+<div class="note note-info icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>info 提示块标签</p>
+</div>
+
+<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>warning 提示块标签</p>
+</div>
+
+<div class="note note-danger icon-padding"><i class="note-icon fa-solid fa-times-circle"></i><p>danger 提示块标签</p>
+</div>
+
+<div class="note note-red icon-padding"><i class="note-icon fa-solid fa-bolt"></i><p>自定义提示块标签</p>
+</div>
+
+<details class="blue"><summary> Folding 测试： 点击查看更多 </summary>
+              <div class="content">
+              <p>啊啊啊啊啊</p><div class="note note-danger icon-padding"><i class="note-icon fa-solid fa-times-circle"></i><p>danger 提示块标签</p></div><div class="note note-tip icon-padding"><i class="note-icon fa-solid fa-lightbulb"></i><p>tip 提示块标签</p></div>
+              </div>
+            </details>
+
+<div class="tabs" id="tab-first-unique-name"><ul class="nav-tabs"><li class="tab active"><a class="#first-unique-name-1">First Tab</a></li><li class="tab"><a class="#first-unique-name-2">Second Tab</a></li><li class="tab"><a class="#first-unique-name-3">Third Tab</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p>
+<p>This is Tab 2.</p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p>
+<p>This is Tab 3.</p>
+<p>This is Tab 3.</p></div></div></div>]]></content>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <url>/2023/02/08/test2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><img lazyload src="/images/loading.svg" data-src="2.png"></p>
 ]]></content>
   </entry>
 </search>
