@@ -160,7 +160,7 @@
 <p><img lazyload src="/images/loading.svg" data-src="8.webp" alt="Front-matter参数"></p>
 <p>用Typora打开模板文件<code>Blog/scaffolds/post.md</code>文件，可以进行相应的设置。</p>
 <p><code>Blog/scaffolds</code>目录，其实该目录下一共有三个文件，刚刚只提到了post.md，还有另外两个文件。</p>
-<p><img lazyload src="/images/loading.svg" data-src="%E5%9F%BA%E4%BA%8Ehexo-github-pages%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89/image-20230209182510285.png" alt="image-20230209182510285"><br>然后这三个文件是对应三种不同的布局（layout）。</p>
+<p><img lazyload src="/images/loading.svg" data-src="13.webp" alt="scaffolds目录"><br>然后这三个文件是对应三种不同的布局（layout)。</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n [layout] &lt;tittle&gt; <span class="comment"># 之前在创建文章时，layout默认是post，名为title的文章在Blog/source/_posts文件夹下</span></span><br><span class="line">hexo n draft &lt;tittle&gt; <span class="comment"># draft是草稿的意思，名为title的文章在Blog/source/_drafts文件夹下，</span></span><br><span class="line">hexo s --draft <span class="comment"># 草稿写好文章后，可以在本地开启预览</span></span><br><span class="line">hexo p draft &lt;tittle&gt; <span class="comment"># 将名为title的文章发送到Blog/source/_posts文件夹下</span></span><br><span class="line">hexo new page board <span class="comment"># 系统会自动在source文件夹下创建一个board文件夹，以及board文件夹中的index.md，这样你访问的board对应的链接就是http://xxx.xxx/board</span></span><br></pre></td></tr></table></figure></div>
 
 <p>（4）然后使用以下命令部署文章到GitHub</p>
