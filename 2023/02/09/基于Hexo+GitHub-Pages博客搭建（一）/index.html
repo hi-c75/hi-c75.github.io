@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/02/09/基于hexo-github-pages博客搭建（一）/"/>
+    <link rel="canonical" href="http://example.com/2023/02/09/基于hexo+github-pages博客搭建（一）/"/>
     <!--- Icon Part-->
     <link rel="icon" type="image/png" href="/images/C.svg" sizes="192x192">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/C.svg">
@@ -18,7 +18,7 @@
     
     <title>
         
-            基于Hexo+GitHub pages博客搭建（一） |
+            基于Hexo+GitHub-Pages博客搭建（一） |
         
         Hi-C75
     </title>
@@ -167,11 +167,6 @@
                                         </li>
                                     
                                         <li>
-                                        <a target="_blank" rel="noopener" href="https://github.com/hi-c75">GITHUB
-                                        </a>
-                                        </li>
-                                    
-                                        <li>
                                         <a target="_blank" rel="noopener" href="https://hi-c75.top">博客
                                         </a>
                                         </li>
@@ -293,10 +288,6 @@
                             </li>
                         
                             <li class="dropdown-item flex-center">
-                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/hi-c75">GITHUB</a>
-                            </li>
-                        
-                            <li class="dropdown-item flex-center">
                                 <a class="dropdown-item" target="_blank" rel="noopener" href="https://hi-c75.top">博客</a>
                             </li>
                         
@@ -348,7 +339,7 @@
             
             
                 <div class="article-title">
-                    <h1 class="article-title-regular">基于Hexo+GitHub pages博客搭建（一）</h1>
+                    <h1 class="article-title-regular">基于Hexo+GitHub-Pages博客搭建（一）</h1>
                 </div>
             
                 
@@ -496,7 +487,7 @@
 <h3 id="Hexo部署到GitHub"><a href="#Hexo部署到GitHub" class="headerlink" title="Hexo部署到GitHub"></a>Hexo部署到GitHub</h3><p>（1）用<code>vscode</code>（当然也可以用其他软件打开，我用的是<code>vscode</code>）打开站点配置文件<code>_config.yml</code>。搜索关键词（<code>crtl+f</code>）<code>deploy</code>，改成如下所示：</p>
 <div class="highlight-container" data-rel="Yaml"><figure class="iseeu highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 注意这里每个参数`:`后都有一个间距的空格，否者会报错</span></span><br><span class="line"><span class="attr">deploy:</span> </span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/YourgithubName/YourgithubName.github.io.git</span>  <span class="comment"># 你的仓库地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span>  <span class="comment"># 这里不应该用master,而是用main，很多团队已经重命名他们的默认主干名为 main . 这是因为2020 年非裔男子乔治·弗洛伊德因白人警察暴力执法惨死而掀起的 Black Lives Matter(黑人的命也是命)运动，很多人认为 master 不尊重黑人，呼吁改为 main.</span></span><br></pre></td></tr></table></figure></div>
 
-<p>（2）这个时候需要先安装<strong>deploy-git</strong> ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
+<p>（2）这个时候需要先安装<code>deploy-git</code> ，也就是部署的命令,这样你才能用命令部署到GitHub。</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></div>
 
 <p>（3）创建博客文章</p>
@@ -513,7 +504,7 @@
 <p>（4）然后使用以下命令部署文章到GitHub</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo g  <span class="comment"># 生成静态文章</span></span><br><span class="line">hexo d  <span class="comment"># 部署文章</span></span><br><span class="line"><span class="comment">## 以上两个命令可合成为一个使用</span></span><br><span class="line">hexo g --d</span><br><span class="line"></span><br><span class="line"><span class="comment">## 部署文章前可先在本地预览效果</span></span><br><span class="line">hexo s  <span class="comment"># 本地(localhost:4000)预览效果</span></span><br></pre></td></tr></table></figure></div>
 
-<p>至此，<code>Hexo+GitHub pages</code>搭建博客基本框架搭建完毕，<a href>基于Hexo+GitHub Pages博客搭建（二）</a>将进一步完善博客内容。</p>
+<p>至此，<code>Hexo+GitHub-pages</code>搭建博客基本框架搭建完毕，<a href="/2023/02/09/%E5%9F%BA%E4%BA%8EHexo+GitHub-Pages%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89/" title="基于Hexo-GitHub-Pages博客搭建（二）">基于Hexo-GitHub-Pages博客搭建（二）</a>将进一步完善博客内容。</p>
 <h1 id="附加"><a href="#附加" class="headerlink" title="附加"></a>附加</h1><h2 id="绑定域名-3"><a href="#绑定域名-3" class="headerlink" title="绑定域名[^3]"></a>绑定域名[^3]</h2><p>虽然在Internet上可以访问的网站，但是网址是GitHub提供的:<code>http://username.github.io </code>,而想使用个性化域名，这就需要绑定的域名。这里演示的是在阿里云万网的域名绑定，在国内主流的域名代理厂商也就阿里云和腾讯云。</p>
 <p><strong>（1）创建解析</strong></p>
 <p>登录到阿里云，进入管理控制台的域名列表，找到个性化域名，进入解析</p>
@@ -522,7 +513,7 @@
 <p><img lazyload src="/images/loading.svg" data-src="10.webp" alt="添加解析"></p>
 <p>包括添加两条解析记录，185.199.111.153是GitHub的地址，你也可以<a class="link" target="_blank" rel="noopener" href="https://ping.chinaz.com/">ping <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>你的 <code>http://username.github.io</code>的ip地址，填入进去。第二个记录类型是CNAME，CNAME的记录值是：<code>username.github.io</code> 这里千万别弄错了。</p>
 <p><strong>（2）输入域名</strong></p>
-<p>登录GitHub，进入之前创建的仓库，点击settings，设置Custom domain，输入你的域名</p>
+<p>登录GitHub，进入之前创建的仓库，点击<code>settings</code>，设置<code>Custom domain</code>，输入你的域名：</p>
 <p><img lazyload src="/images/loading.svg" data-src="11.webp" alt="设置域名"></p>
 <p>点击save保存。</p>
 <p><strong>（3）创建CNAME文件</strong></p>
@@ -542,11 +533,11 @@
                 <div class="post-copyright-info">
                     <div class="article-copyright-info-container">
     <ul>
-        <li>本文标题：基于Hexo+GitHub pages博客搭建（一）</li>
+        <li>本文标题：基于Hexo+GitHub-Pages博客搭建（一）</li>
         <li>本文作者：C75</li>
         <li>创建时间：2023-02-09 12:20:35</li>
         <li>
-            本文链接：https://hi-c75.top/2023/02/09/基于hexo-github-pages博客搭建（一）/
+            本文链接：https://hi-c75.top/2023/02/09/基于Hexo+GitHub-Pages博客搭建（一）/
         </li>
         <li>
             版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -574,21 +565,21 @@
             
                 <div class="article-nav">
                     
-                    
-                        <div class="article-next">
-                            <a class="next"
-                            rel="next"
-                            href="/2023/02/05/Git%E9%85%8D%E7%BD%AE/"
+                        <div class="article-prev">
+                            <a class="prev"
+                            rel="prev"
+                            href="/2023/02/09/%E5%9F%BA%E4%BA%8EHexo+GitHub-Pages%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89/"
                             >
-                                <span class="title flex-center">
-                                    <span class="post-nav-title-item"></span>
-                                    <span class="post-nav-item">下一篇</span>
+                                <span class="left arrow-icon flex-center">
+                                    <i class="fa-solid fa-chevron-left"></i>
                                 </span>
-                                <span class="right arrow-icon flex-center">
-                                    <i class="fa-solid fa-chevron-right"></i>
+                                <span class="title flex-center">
+                                    <span class="post-nav-title-item">基于Hexo+GitHub-Pages博客搭建（二）</span>
+                                    <span class="post-nav-item">上一篇</span>
                                 </span>
                             </a>
                         </div>
+                    
                     
                 </div>
             
@@ -601,7 +592,7 @@
                 <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">基于Hexo+GitHub pages博客搭建（一）</div>
+        <div class="page-title">基于Hexo+GitHub-Pages博客搭建（一）</div>
         <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%95%E8%A8%80"><span class="nav-text">引言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E7%9A%84%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4-1"><span class="nav-text">Hexo的搭建步骤[^1]</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git-Bash"><span class="nav-text">安装Git Bash</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%A5%E9%94%99"><span class="nav-text">报错</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-text">安装Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8A%A5%E9%94%99-1"><span class="nav-text">报错</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E5%85%B3%E8%81%94%E5%88%B0GitHub"><span class="nav-text">Hexo关联到GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93-2"><span class="nav-text">GitHub创建个人仓库[^2]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90SSH%E6%B7%BB%E5%8A%A0%E5%88%B0GitHub"><span class="nav-text">生成SSH添加到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="nav-text">Hexo部署到GitHub</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%99%84%E5%8A%A0"><span class="nav-text">附加</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D-3"><span class="nav-text">绑定域名[^3]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-3"><span class="nav-text">Hexo常用命令[^3]</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-text">参考资料</span></a></li></ol>
 
     </div>
