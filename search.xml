@@ -145,7 +145,7 @@
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo n bolgname</span><br></pre></td></tr></table></figure></div>
 
 <p><img lazyload src="/images/loading.svg" data-src="7.webp" alt="创建文章"></p>
-<p>之后可以发现<code>Blog/source/_posts</code>目录下出现一个名为<code>test</code>的<code>Markdown</code>文章，用<a href>Typora</a>软件打开，文件最上方以 <code>---</code> 分隔的区域，有用于指定个别文件的变量的<code>Front-matter</code>。开始可使用几个基本参数：<code>title</code>，<code>author</code>，<code>date</code>，<code>tags</code>，<code>categories</code>，如下所示：</p>
+<p>之后可以发现<code>Blog/source/_posts</code>目录下出现一个名为<code>test</code>的<code>Markdown</code>文章，用Typora软件打开，文件最上方以 <code>---</code> 分隔的区域，有用于指定个别文件的变量的<code>Front-matter</code>。开始可使用几个基本参数：<code>title</code>，<code>author</code>，<code>date</code>，<code>tags</code>，<code>categories</code>，如下所示：</p>
 <p><img lazyload src="/images/loading.svg" data-src="8.webp" alt="Front-matter参数"></p>
 <p>用Typora打开模板文件<code>Blog/scaffolds/post.md</code>文件，可以进行相应的设置。</p>
 <p><code>Blog/scaffolds</code>目录，其实该目录下一共有三个文件，刚刚只提到了post.md，还有另外两个文件。</p>
@@ -155,7 +155,7 @@
 <p>（4）然后使用以下命令部署文章到GitHub</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g  <span class="comment"># 生成静态文章</span></span><br><span class="line">hexo d  <span class="comment"># 部署文章</span></span><br><span class="line"><span class="comment">## 以上两个命令可合成为一个使用</span></span><br><span class="line">hexo g --d</span><br><span class="line"></span><br><span class="line"><span class="comment">## 部署文章前可先在本地预览效果</span></span><br><span class="line">hexo s  <span class="comment"># 本地(localhost:4000)预览效果</span></span><br></pre></td></tr></table></figure></div>
 
-<p>至此，<code>Hexo+GitHub-pages</code>搭建博客基本框架搭建完毕，<a href="/2023/02/09/%E5%9F%BA%E4%BA%8EHexo+GitHub-Pages%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89/" title="基于Hexo-GitHub-Pages博客搭建（二）">基于Hexo-GitHub-Pages博客搭建（二）</a>将进一步完善博客内容。</p>
+<p>至此，<code>Hexo+GitHub-pages</code>搭建博客基本框架搭建完毕，<a href="/2023/02/09/%E5%9F%BA%E4%BA%8EHexo+GitHub-Pages%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89/" title="基于Hexo+GitHub-Pages博客搭建（二）">基于Hexo+GitHub-Pages博客搭建（二）</a>将进一步完善博客内容。</p>
 <h1 id="附加"><a href="#附加" class="headerlink" title="附加"></a>附加</h1><h2 id="绑定域名-3"><a href="#绑定域名-3" class="headerlink" title="绑定域名[^3]"></a>绑定域名[^3]</h2><p>虽然在Internet上可以访问的网站，但是网址是GitHub提供的:<code>http://username.github.io </code>,而想使用个性化域名，这就需要绑定的域名。这里演示的是在阿里云万网的域名绑定，在国内主流的域名代理厂商也就阿里云和腾讯云。</p>
 <p><strong>（1）创建解析</strong></p>
 <p>登录到阿里云，进入管理控制台的域名列表，找到个性化域名，进入解析</p>
@@ -210,7 +210,7 @@
 <p>对文章编辑完后使用以下指令发布：</p>
 <div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
 
-<p>注：文章编写可使用<a class="link" href="https://pan.baidu.com/s/1fhP7Us6lgelyiJCALvaDPg">Typora <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ，该版本存在过期问题，可根据该方法解决：<a class="link" href="https://blog.csdn.net/fxzzq/article/details/126079116">Typora 0.11.18 Beta版过期解决 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>注：文章编写可使用<a class="link" href="https://pan.baidu.com/s/1LuBJl26azO3KNBpBmnAKVg?pwd=1122">Typora <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ，该版本存在过期问题，可根据该方法解决：<a class="link" href="https://blog.csdn.net/fxzzq/article/details/126079116">Typora 0.11.18 Beta版过期解决 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h2 id="文章站内引用-2"><a href="#文章站内引用-2" class="headerlink" title="文章站内引用[^2]"></a>文章站内引用[^2]</h2><p>若要在博客文章中引用自己的文章，需要使用以下指令：</p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% post_link 文件名(不要后缀) 文章别名(可选) %&#125;</span><br></pre></td></tr></table></figure></div>
 
